@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management App</title>
+    
+    <!-- DevExtreme CSS -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.2.3/css/dx.light.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Form (shown initially) -->
+        <div id="login-container" class="login-container">
+            <div class="login-box">
+                <h1>Project Management App</h1>
+                <div id="login-form"></div>
+            </div>
+        </div>
+
+        <!-- Main Application (shown after login) -->
+        <div id="main-container" class="main-container" style="display: none;">
+            <!-- Toolbar -->
+            <div id="toolbar"></div>
+
+            <!-- DataGrid -->
+            <div id="dataGrid"></div>
+
+            <!-- Task Form Popup -->
+            <div id="task-form-popup"></div>
+        </div>
+    </div>
+
+    <!-- jQuery (required by DevExtreme) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- DevExtreme JS -->
+    <script src="https://cdn3.devexpress.com/jslib/23.2.3/js/dx.all.js"></script>
+    
+    <!-- Configuration from backend -->
+    <script src="http://localhost:8000/api/config.php"></script>
+    
+    <!-- Application JS -->
+    <script src="app.js"></script>
+</body>
+</html>

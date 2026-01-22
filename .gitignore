@@ -1,0 +1,39 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Configuration files with sensitive data
+backend/config/database.php
+backend/config/config.php
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Environment files
+.env
+.env.local
+
+# Database dumps
+*.sql
+*.dump
+
+# Build files
+dist/
+build/
